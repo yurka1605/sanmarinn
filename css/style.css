@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+button {
+    border: 0;
+    outline: none;
+}
+ul {
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+
+/* Header */
+.header {
+  background: url(../assets/header/banner-bg.png);
+  background-size: cover;
+  background-position: top left;
+  padding-bottom: 30px;
+}
+.header__top {
+    color: white;
+    padding-top: 10px;
+}
+.header__top.orange {
+    color: #ee751d;
+}
+.header__top .header-logo-orange,
+.header__top.orange .header-logo-white,
+.header__top.orange .enter__img_white,
+.header__top .enter__img_orange,
+.header__top .header__menu_close,
+.header__top.orange .header__menu_open {
+    display: none;
+}
+.header__top.orange .header-logo-orange,
+.header__top .header-logo-white,
+.header__top .enter__img_white,
+.header__top.orange .enter__img_orange,
+.header__top.orange .header__menu_close {
+    display: block;
+}
+.header__top .header__menu_open {
+    display: flex;
+}
+.header__btns {
+    display: flex;
+    align-items: center;
+}
+.header__top_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu_btn {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    height: 18px;
+    position: relative;
+    top: 4px;
+}
+.header__menu_btn span {
+    width: 30px;
+    height: 3px;
+    display: block;
+}
+.header__top .header__menu_btn {
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+}
+.header__top.orange .header__menu_btn {
+    border-top: 3px solid #ee751d;
+    border-bottom: 3px solid #ee751d;
+}
+.header__top .header__menu_btn span {
+    background-color: #fff;
+}
+.header__top.orange .header__menu_btn span {
+    background-color: #ee751d;
+}
+.header__menu_text {
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1;
+}
+.header__logo {position: relative;top: -5px;}
+.header__enter {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.enter__text {
+    text-decoration: underline;
+    font-size: 16px;
+}
+.header__enter img {
+    width: 14px;
+    height: 16px;
+    margin-right: 8px;
+}
+.header__phone {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+/* END:Header */
+
+/* banner */
+.banner {
+    padding-top: 50px;
+}
+.banner__left h1 {
+    font-weight: 300;
+    font-size: 49px;
+    color: #fff;
+    text-align: left;
+}
+.banner__left img {
+    margin-top: 100px;
+}
+.banner__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.banner__form {
+    background-color: #fff;
+    max-width: 350px;
+    padding: 26px 35px 30px 35px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.banner__form h3 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ee741d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+label[for="out"] {   
+    margin-top: 13px;
+}
+.form__people {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+}
+.adults span,
+.childs span {
+    margin-bottom: 12px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #3b3b3b;
+    text-align: left;
+    display: block;
+}
+.adults {
+    margin-right: 90px;
+}
+.counter {
+    display: flex;
+}
+.minus {
+    font-size: 30px;
+    font-weight: 600;
+    padding-right: 10px;
+    line-height: 1;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.plus {
+    height: 30px;
+    font-size: 30px;
+    padding-left: 10px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.banner__form input {
+    border: 0;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: inset 0px 0px 20px -9px #888888;
+    padding: 0 20px 0 10px;
+}
+.counter input {
+    width: 30px;
+    text-align: center;
+}
+/* END:banner */
+
+/* Media */
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}
