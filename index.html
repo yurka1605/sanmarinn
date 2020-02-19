@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sunmarinn, Отлель">
     <title>Sunmarinn</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -46,15 +47,21 @@
                 <div class="row banner__top">
                     <div class="banner__left col-lg-6">
                         <h1>ЛУЧШИЙ ОТДЫХ НА ЧЕРНОМОРСКОМ ПОБЕРЕЖЬЕ</h1>
-                        <img src="./assets/header/all-inclusive.png" alt="all-inclusive">
+                        <div class="banner__all">
+                            <span>ВСЁ<br>ВКЛЮЧЕНО!</span>
+                        </div>
                     </div>
                     <div class="banner__right col-lg-6">
                         <form class="banner__form" action="">
                             <h3>ОНЛАЙН БРОНИРОВАНИЕ</h3>
                             <label for="in">Дата заезда</label>
-                            <input type="datetime" placeholder="02.03.2019" name="in" id="in">
+                            <div class="input-datetime">
+                                <input type="datetime" placeholder="02.03.2019" name="in" id="in">
+                            </div>
                             <label for="out">Дата выезда</label>
-                            <input type="datetime" placeholder="16.03.2019" name="out" id="out">
+                            <div class="input-datetime">
+                                <input type="datetime" placeholder="16.03.2019" name="out" id="out">
+                            </div>
                             <div class="form__people">
                                 <div class="adults">
                                     <span>Взрослые</span>
@@ -76,11 +83,38 @@
                             <div class="form__btns">
                                 <button type="submit">ЗАБРОНИРОВАТЬ</button>
                                 <div class="dop-btns">
-                                    <button type="submit">МОЯ БРОНЬ</button>
-                                    <button type="submit">ОПЛАТИТЬ</button>
+                                    <button type="button">МОЯ БРОНЬ</button>
+                                    <button type="button">ОПЛАТИТЬ</button>
                                 </div>
                             </div>
                         </form>
+                        <a href="#" class="book-transfer">заказать трансфер</a>
+                        <div class="banner__slider">
+                            <div class="slider__body">
+                                <div data-num="1" class="slider__item active">
+                                    <img src="./assets/slider-min-1.png" alt="1">
+                                </div>
+                                <div data-num="2" class="slider__item">
+                                    <img src="./assets/slider-min-2.png" alt="2">
+                                </div>
+                                <div data-num="3" class="slider__item">
+                                    <img src="./assets/slider-min-3.png" alt="3">
+                                </div>
+                                <div data-num="4" class="slider__item">
+                                    <img src="./assets/slider-min-3.png" alt="4">
+                                </div>
+                                <div data-num="5" class="slider__item">
+                                    <img src="./assets/slider-min-3.png" alt="5">
+                                </div>
+                            </div>
+                            <div class="slider__controls">
+                                <div class="controls__item left"></div>
+                                <div class="controls__info">
+                                    <span class="current">1</span>/<span class="total">5</span>
+                                </div>
+                                <div class="controls__item right"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
