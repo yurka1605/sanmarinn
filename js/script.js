@@ -17,7 +17,6 @@ $('.minus, .plus').on('click', function() {
 });
 
 // banner-slider
-// ../assets/header/banner-bg-1.png
 $('.banner__slider .slider__item').on('click', function() {
     lastSlide($(this).data('num'), this);
 });
@@ -42,4 +41,16 @@ function lastSlide(num, current) {
     $(current).addClass('active');
     $(firtsImg).animate({ marginLeft: `-${ currentNum * width }px`}, 300);
     $('.controls__info .current').text(`${ $(current).data('num') }`);
+    var style = `background-image: url(./assets/header/banner-bg-${ num }.png);`
+    $('header').attr( 'style', style);
 }
+
+$('.header__menu_open').on('click', function() {
+    $('.header__top').addClass('orange');
+    $('.header__menu').addClass('active');
+});
+
+$('.close-btn').on('click', function() {
+    $('.header__top').removeClass('orange');
+    $('.header__menu').removeClass('active');
+});
