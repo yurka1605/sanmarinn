@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+    checkScrollHeader();
     $( 'input[type="datetime"]').datepicker({ dateFormat: "dd.mm.yy" });
     // add controls for aboute
     $('.about__slider_items .about__slider_item').each(i => {
@@ -8,19 +9,16 @@ $( document ).ready(function() {
 });
 
 $(window).on('scroll', function() {
-    if ($(this).scrollTop() === 0) {
-        $('.header-container').removeClass('scroll');
-        $('.header__top').removeClass('scroll');
-    } else {
-        if ($('.header-container').hasClass('scroll')) {
-            return;
-        }
-        $('.header-container').addClass('scroll');
-        $('.header__top').addClass('scroll');
-    }
+    checkScrollHeader();
 });
 
 /** ======================== User actions ========================== **/
+// scrool bunner
+$('.further__arrow, .banner__further span').on('click', _ => {
+    $('body, html').animate({ 
+        scrollTop: $('.about-us').offset().top - 75,
+    }, 500, 'swing');
+})
 // + - people 
 $('.minus, .plus').on('click', function() {
     var input = $(this).siblings('input');
@@ -91,6 +89,20 @@ $('.numbers__control').on('click', function() {
 
 
 /** ======================== Functions ========================== **/
+// scrollHeader
+function checkScrollHeader() {
+    if ($(window).scrollTop() === 0) {
+        $('.header-container').removeClass('scroll');
+        $('.header__top').removeClass('scroll');
+    } else {
+        if ($('.header-container').hasClass('scroll')) {
+            return;
+        }
+        $('.header-container').addClass('scroll');
+        $('.header__top').addClass('scroll');
+    }
+}
+
 // banner change slide
 function lastSlide(num, current) {
     var currentNum = num - 1;
