@@ -15,7 +15,7 @@
         <div class="header-container">
             <div class="container">
                 <section class="header__top row">
-                    <div class="header__btns col-lg-5">
+                    <div class="header__btns col-lg-5 col-md-4 col-2">
                         <div class="header__menu_open">
                             <div class="header__menu_btn">
                                 <span></span>
@@ -26,7 +26,7 @@
                             <div class="close-btn">×</div>
                         </div>
                     </div>
-                    <div class="header__top_right col-lg-7">
+                    <div class="header__top_right col-lg-7 col-md-8 col-10">
                         <div class="header__logo">
                             <img class="header-logo-white" src="./assets/header/logo.png" alt="logo">
                             <img class="header-logo-orange" src="./assets/header/logo-orange.png" alt="logo">
@@ -40,9 +40,9 @@
                     </div>
                 </section>
                 <section class="header__menu row">
-                    <div class="menu__left col-lg-7">
+                    <div class="menu__left col-lg-7 col-md-6">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-md-12">
                                 <ul class="menu__list">
                                     <h3 class="list__title">Об отеле</h3>
                                     <li class="list__item"><a href="#" target="_blanck">Заселение в отель</a></li>
@@ -67,7 +67,7 @@
                                     <li class="list__item"><a href="#" target="_blanck">Услуги трансфера</a></li>
                                 </ul>
                             </div>
-                            <div class="col-lg-5">
+                            <div class="col-lg-5 col-md-12">
                                 <ul class="menu__list">
                                     <h3 class="list__title">НОМЕРА И ЦЕНЫ</h3>
                                     <li class="list__item"><a href="#" target="_blanck">2-х местный «Стандарт»</a></li>
@@ -93,7 +93,7 @@
                                     <li class="list__item"><a href="#" target="_blanck">Экскурсии</a></li>
                                 </ul>
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-lg-3 col-md-12">
                                 <ul class="menu__list">
                                     <h3 class="list__title">Пляж, Бассейны</h3>
                                     <li class="list__item"><a href="#" target="_blanck">Пляж</a></li>
@@ -119,9 +119,17 @@
                                     <li class="list__item"><a href="#" target="_blanck">Пляж</a></li>
                                 </ul>
                             </div>
+                            <div class="col-md-12 tablet-menu">
+                                <ul class="menu__list">
+                                    <h3 class="list__title">Забронировать</h3>
+                                </ul>
+                                <ul class="menu__list"><h3 class="list__title">Моя бронь</h3></ul>
+                                <ul class="menu__list"><h3 class="list__title">Оплатить</h3></ul>
+                                <ul class="menu__list"><h3 class="list__title">Заказать трансфер</h3></ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="menu__right col-lg-5">
+                    <div class="menu__right col-lg-5 col-md-6">
                         <div class="menu__room">
                             <div class="room__img">
                                 <div class="room__icons">
@@ -137,7 +145,7 @@
                             <button type="button" class="room__btn">РАССЧИТАТЬ СТОИМОСТЬ</button>
                         </div>
                         <div class="menu__contacts row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-12">
                                 <div class="contact__title">Контакты</div>
                                 <div class="contact__num">
                                     <a href="tel:88002007561">8 800 200 75 61</a>
@@ -163,7 +171,7 @@
                                     <a href="mailto:info@sunmarinn.ru">info@sunmarinn.ru</a></div>
                                 <div class="contact__addres">г. Анапа, ул.Красноармейская, 10</div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-12">
                                 <div class="contact__title">МЫ В СОЦИАЛЬНЫЙ СЕТЯХ:</div>
                                 <div class="contact__soc">
                                     <a href="#">
@@ -202,17 +210,26 @@
                     </div>
                 </section>
             </div>
+            <div class="menu__table-enter">
+                <div class="container">
+                    <div class="header__enter">
+                        <img class="enter__img_white" src="./assets/header/user.png" alt="user-icon">
+                        <img class="enter__img_orange" src="./assets/header/user-orange.png" alt="user-icon">
+                        <span class="enter__text">вход для агентов</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <section class="banner">
             <div class="container">
                 <div class="row banner__top">
-                    <div class="banner__left col-lg-6">
+                    <div class="banner__left col-lg-6 col-md-6 col-12">
                         <h1>ЛУЧШИЙ ОТДЫХ НА ЧЕРНОМОРСКОМ ПОБЕРЕЖЬЕ</h1>
                         <div class="banner__all">
                             <span>ВСЁ<br>ВКЛЮЧЕНО!</span>
                         </div>
                     </div>
-                    <div class="banner__right col-lg-6">
+                    <div class="banner__right col-lg-6 col-md-6">
                         <form class="banner__form" action="">
                             <h3>ОНЛАЙН БРОНИРОВАНИЕ</h3>
                             <label for="in">Дата заезда</label>
@@ -277,24 +294,64 @@
                             </div>
                         </div>
                     </div>
-            
-            
                 </div>
                 <div class="banner__further">
                     <span>дальше</span>
+                    <span>вниз</span>
                     <div class="further__arrow"></div>
                 </div>
             </div>
+            <div class="controls__item left"></div>
+            <div class="controls__item right"></div>
         </section>
     </header>
     <main class="main">
         <div class="container">
+            <section class="mobile-form">
+                <form class="banner__form" action="">
+                    <h3>ОНЛАЙН БРОНИРОВАНИЕ</h3>
+                    <label for="in">Дата заезда</label>
+                    <div class="input-datetime">
+                        <input type="datetime" placeholder="02.03.2019" name="in" id="in">
+                    </div>
+                    <label for="out">Дата выезда</label>
+                    <div class="input-datetime">
+                        <input type="datetime" placeholder="16.03.2019" name="out" id="out">
+                    </div>
+                    <div class="form__people">
+                        <div class="adults">
+                            <span>Взрослые</span>
+                            <div class="counter">
+                                <div class="minus">-</div>
+                                <input type="text" placeholder="1" name="1" id="adults">
+                                <div class="plus">+</div>
+                            </div>
+                        </div>
+                        <div class="childs">
+                            <span>Дети</span>
+                            <div class="counter">
+                                <div class="minus">-</div>
+                                <input type="text" placeholder="1" name="1" id="childs">
+                                <div class="plus">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__btns">
+                        <button type="submit">ЗАБРОНИРОВАТЬ</button>
+                        <div class="dop-btns">
+                            <button type="button">МОЯ БРОНЬ</button>
+                            <button type="button">ОПЛАТИТЬ</button>
+                            <button type="button">ЗАКАЗАТЬ ТРАНСФЕР</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
             <section class="about-us">
                 <h1 class="sections__title">О нас</h1>
                 <div class="about__slider">
                     <div class="about__slider_items">
                         <div class="about__slider_item row">
-                            <div class="item__text col-lg-6">
+                            <div class="item__text col-lg-6 col-md-6">
                                 <p>Приветствуем Вас на официальном сайте одного из лучших отелей города-курорта Анапа формата «всё включено» 
                                 Sunmarinn Resort Hotel****!<br> Южное черноморское гостеприимство придётся по душе каждому, кто желает 
                                 чувствовать себя как дома.<br> Удачное расположение в самом центре города делает отель отличным выбором как для 
@@ -303,12 +360,12 @@
                                 парки развлечений и многообразие экскурсий на любой вкус и возраст.</p>
                                 <a href="#">Узнать больше</a>
                             </div>
-                            <div class="item__img col-lg-6" >
+                            <div class="item__img col-lg-6 col-md-6" >
                                 <img src="./assets/about-us/about-us.png" alt="new">
                             </div>
                         </div>
                         <div class="about__slider_item row">
-                            <div class="item__text col-lg-6">
+                            <div class="item__text col-lg-6 col-md-6">
                                 Приветствуем Вас на официальном сайте одного из лучших отелей города-курорта Анапа формата «всё включено» 
                                 Sunmarinn Resort Hotel****! Южное черноморское гостеприимство придётся по душе каждому, кто желает 
                                 чувствовать себя как дома. Удачное расположение в самом центре города делает отель отличным выбором как для 
@@ -317,12 +374,12 @@
                                 парки развлечений и многообразие экскурсий на любой вкус и возраст.
                                 <a href="#">Узнать больше</a>
                             </div>
-                            <div class="item__img col-lg-6" >
+                            <div class="item__img col-lg-6 col-md-6" >
                                 <img src="./assets/about-us/about-us.png" alt="new">
                             </div>
                         </div>
                         <div class="about__slider_item row">
-                            <div class="item__text col-lg-6">
+                            <div class="item__text col-lg-6 col-md-6">
                                 Приветствуем Вас на официальном сайте одного из лучших отелей города-курорта Анапа формата «всё включено» 
                                 Sunmarinn Resort Hotel****! Южное черноморское гостеприимство придётся по душе каждому, кто желает 
                                 чувствовать себя как дома. Удачное расположение в самом центре города делает отель отличным выбором как для 
@@ -331,7 +388,7 @@
                                 парки развлечений и многообразие экскурсий на любой вкус и возраст.
                                 <a href="#">Узнать больше</a>
                             </div>
-                            <div class="item__img col-lg-6" >
+                            <div class="item__img col-lg-6 col-md-6" >
                                 <img src="./assets/about-us/about-us.png" alt="new">
                             </div>
                         </div>
@@ -346,7 +403,7 @@
             <section class="stocks">
                 <h1 class="sections__title">Акции <a href="#">Посмотреть все акции акции</a></h1>
                 <div class="stocks__slider row">
-                    <div class="stocks__slider_item active col-lg-4" data-num="1">
+                    <div class="stocks__slider_item active col-lg-4 col-md-4 col-12" data-num="1">
                         <img src="./assets/stocks/stocks-1.png" alt="stocks/stocks-1">
                         <div class="stocks__slider_info">
                             <div>
@@ -359,7 +416,7 @@
                             <a href="#">Узнать больше</a>
                         </div>
                     </div>
-                    <div class="stocks__slider_item col-lg-4" data-num="2">
+                    <div class="stocks__slider_item col-lg-4 col-md-4" data-num="2">
                         <img src="./assets/stocks/stocks-2.png" alt="stocks/stocks-2">
                         <div class="stocks__slider_info">
                             <div>
@@ -371,33 +428,29 @@
                             <a href="#">Узнать больше</a>
                         </div>
                     </div>
-                    <div class="stocks__slider_item col-lg-4" data-num="3">
+                    <div class="stocks__slider_item col-lg-4 col-md-4 col-12" data-num="3">
                         <img src="./assets/stocks/stocks-3.png" alt="stocks/stocks-3">
                         <div class="stocks__slider_info">
-                            <div>
-                                <h3>дельфины</h3>
-                                <p>Анапский дельфинарий «Немо» - это уникальный современный комплекс. 
-                                    Перед вами выступят звезды морского мира: чилийский морской лев,
-                                    моржиха, северные морские котики, белый полярный кит и самые умные 
-                                    представители морских млекопитающих Тихоокеанские дельфины афалины.</p>
-                                <a href="#">Узнать больше</a>
-                            </div>
+                            <h3>дельфины</h3>
+                            <p>Анапский дельфинарий «Немо» - это уникальный современный комплекс. 
+                                Перед вами выступят звезды морского мира: чилийский морской лев,
+                                моржиха, северные морские котики, белый полярный кит и самые умные 
+                                представители морских млекопитающих Тихоокеанские дельфины афалины.</p>
+                            <a href="#">Узнать больше</a>
                         </div>
                     </div>
-                    <div class="stocks__slider_item col-lg-4" data-num="4">
+                    <div class="stocks__slider_item col-lg-4 col-md-4 col-12" data-num="4">
                         <img src="./assets/stocks/stocks-1.png" alt="stocks/stocks-1">
                         <div class="stocks__slider_info">
-                            <div>
-                                <h3>дельфины</h3>
-                                <p>Анапский дельфинарий «Немо» - это уникальный современный комплекс. 
-                                    Перед вами выступят звезды морского мира: чилийский морской лев, 
-                                    моржиха, северные морские котики, белый полярный кит и самые умные 
-                                    представители морских млекопитающих Тихоокеанские дельфины афалины.</p>
-                                <a href="#">Узнать больше</a>
-                            </div>
+                            <h3>дельфины</h3>
+                            <p>Анапский дельфинарий «Немо» - это уникальный современный комплекс. 
+                                Перед вами выступят звезды морского мира: чилийский морской лев, 
+                                моржиха, северные морские котики, белый полярный кит и самые умные 
+                                представители морских млекопитающих Тихоокеанские дельфины афалины.</p>
+                            <a href="#">Узнать больше</a>
                         </div>
                     </div>
-                    <div class="stocks__slider_item col-lg-4" data-num="5">
+                    <div class="stocks__slider_item col-lg-4 col-md-4" data-num="5">
                         <img src="./assets/stocks/stocks-2.png" alt="stocks/stocks-2">
                         <div class="stocks__slider_info">
                             <div>
@@ -409,7 +462,7 @@
                             <a href="#">Узнать больше</a>
                         </div>
                     </div>
-                    <div class="stocks__slider_item col-lg-4" data-num="6">
+                    <div class="stocks__slider_item col-lg-4 col-md-4" data-num="6">
                         <img src="./assets/stocks/stocks-3.png" alt="stocks/stocks-3">
                         <div class="stocks__slider_info">
                             <div>
@@ -427,11 +480,14 @@
                     <div class="stocks__control left"></div>
                     <div class="stocks__control right"></div>
                 </div>
+                <div class="stocks__control left"></div>
+                <div class="stocks__control right"></div>
+                <a href="#" class="show-all">ПОКАЗАТЬ ВСЕ АКЦИИ</a>
             </section>
             <section class="numbers">
                 <h1 class="sections__title">Номера отеля <a href="#">Перейти к выбору номера</a></h1>
                 <div class="numbers__slider row">
-                    <div class="numbers__slider_item col-lg-4 active" data-num="1">
+                    <div class="numbers__slider_item col-lg-4 col-md-4 active" data-num="1">
                         <div class="numbers__img">
                             <img src="./assets/numbers/number-1.png" alt="numbers-1">
                             <div class="numbers__icons">
@@ -443,7 +499,7 @@
                                 <img src="./assets/header/badroom.png" alt="badroom">
                             </div>
                             <div class="banner__all">
-                                <span>ALL<br>INCLUSIVE</span>
+                                <span>ALL<br> INCLUSIVE</span>
                             </div>
                         </div>
                         <div class="numbers__slider_info">
@@ -451,7 +507,7 @@
                             <a href="#">РАССЧИТАТЬ СТОИМОСТЬ</a>
                         </div>
                     </div>
-                    <div class="numbers__slider_item col-lg-4" data-num="2">
+                    <div class="numbers__slider_item col-lg-4 col-md-4" data-num="2">
                         <div class="numbers__img">
                             <img src="./assets/numbers/number-2.png" alt="numbers-2">
                             <div class="numbers__icons">
@@ -466,7 +522,7 @@
                                 <img src="./assets/header/wind.png" alt="wind">
                             </div>
                             <div class="banner__all">
-                                <span>ALL<br>INCLUSIVE</span>
+                                <span>ALL<br> INCLUSIVE</span>
                             </div>
                         </div>
                         <div class="numbers__slider_info">
@@ -474,7 +530,7 @@
                             <a href="#">РАССЧИТАТЬ СТОИМОСТЬ</a>
                         </div>
                     </div>
-                    <div class="numbers__slider_item col-lg-4" data-num="3">
+                    <div class="numbers__slider_item col-lg-4 col-md-4" data-num="3">
                         <div class="numbers__img">
                             <img src="./assets/numbers/number-3.png" alt="numbers-3">
                             <div class="numbers__icons">
@@ -486,7 +542,7 @@
                                 <img src="./assets/header/badroom.png" alt="badroom">
                             </div>
                             <div class="banner__all">
-                                <span>ALL<br>INCLUSIVE</span>
+                                <span>ALL<br> INCLUSIVE</span>
                             </div>
                         </div>
                         <div class="numbers__slider_info">
@@ -494,7 +550,7 @@
                             <a href="#">РАССЧИТАТЬ СТОИМОСТЬ</a>
                         </div>
                     </div>
-                    <div class="numbers__slider_item col-lg-4" data-num="4">
+                    <div class="numbers__slider_item col-lg-4 col-md-4" data-num="4">
                         <div class="numbers__img">
                             <img src="./assets/numbers/number-1.png" alt="numbers-1">
                             <div class="numbers__icons">
@@ -514,7 +570,7 @@
                             <a href="#">РАССЧИТАТЬ СТОИМОСТЬ</a>
                         </div>
                     </div>
-                    <div class="numbers__slider_item col-lg-4" data-num="5">
+                    <div class="numbers__slider_item col-lg-4 col-md-4" data-num="5">
                         <div class="numbers__img">
                             <img src="./assets/numbers/number-2.png" alt="numbers-2">
                             <div class="numbers__icons">
@@ -534,7 +590,7 @@
                             <a href="#">РАССЧИТАТЬ СТОИМОСТЬ</a>
                         </div>
                     </div>
-                    <div class="numbers__slider_item col-lg-4" data-num="6">
+                    <div class="numbers__slider_item col-lg-4 col-md-4" data-num="6">
                         <div class="numbers__img">
                             <img src="./assets/numbers/number-3.png" alt="numbers-3">
                             <div class="numbers__icons">
@@ -559,11 +615,14 @@
                     <div class="numbers__control left"></div>
                     <div class="numbers__control right"></div>
                 </div>
+                <div class="numbers__control left"></div>
+                <div class="numbers__control right"></div>
+                <a href="#" class="show-all">ПОКАЗАТЬ ВСЕ НОМЕРА</a>
             </section>
             <section class="feedback">
                 <h1 class="sections__title">Отзывы<a href="#">Смотреть все отзывы</a></h1>
                 <div class="feedback__items row">
-                    <div class="feedback_item col-lg-4">
+                    <div class="feedback_item col-lg-4 col-md-6">
                         <img src="./assets/feedback/feedback-1.png" alt="feedback/feedback-1">
                         <div class="feedback__info">
                             <h3>павел</h3>
@@ -585,7 +644,7 @@
                             <a href="#">Развернуть</a>
                         </div>
                     </div>
-                    <div class="feedback_item col-lg-4">
+                    <div class="feedback_item col-lg-4 col-md-6">
                         <img src="./assets/feedback/feedback-3.png" alt="feedback/feedback-3">
                         <div class="feedback__info">
                             <h3>Екатерина</h3>
@@ -596,13 +655,14 @@
                         </div>
                     </div>
                 </div>
+                <a href="#" class="show-all">ПОКАЗАТЬ ВСЕ НОМЕРА</a>
             </section>
         </div>
     </main>
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="footer__contacts col-lg-6">
+                <div class="footer__contacts col-lg-6 col-md-6 col-12">
                     <h2>Контакты</h2>
                     <div class="footer__info">
                         <a href="tel:88002007561">8 800 200 75 61</a>
@@ -642,7 +702,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="footer__partners col-lg-6">
+                <div class="footer__partners col-lg-6 col-md-6">
                     <h2>Партнеры</h2>
                     <div class="partner__info">
                         <a href="#"><img src="./assets/footer/partner-1.png" alt="tripAdvisor"></a>
@@ -651,6 +711,10 @@
                         <a href="#"><img src="./assets/footer/partner-4.png" alt="IIko"></a>
                         <a href="#"><img src="./assets/footer/partner-5.png" alt="1C:Отель"></a>
                     </div>
+                </div>
+                <div class="banner__further">
+                    <span>наверх</span>
+                    <div class="further__arrow"></div>
                 </div>
             </div>
         </div>

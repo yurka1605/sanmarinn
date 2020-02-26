@@ -48,11 +48,17 @@ $('.controls__item').on('click', function() {
 $('.header__menu_open').on('click', function() {
     $('.header__top').addClass('orange');
     $('.header__menu').addClass('active');
+    if ($(window).width() < 1200) {
+        $('.header-container').addClass('fullfield');
+    } 
 });
 // close menu
 $('.close-btn').on('click', function() {
     $('.header__top').removeClass('orange');
     $('.header__menu').removeClass('active');
+    if ($(window).width() < 1200) {
+        $('.header-container').removeClass('fullfield');
+    } 
 });
 // click about nav-btn
 $('body').on('click', '.about__nav-btn', function() {
@@ -128,7 +134,8 @@ function aboutChangeSlide(num) {
         $(el).removeClass('active');
     });
     $(`.about__nav-btn:nth-child(${ num })`).addClass('active');
-    $(firtsSlide).animate({ marginTop: `-${ (num - 1) * height }px`}, 300);
+    $(firtsSlide).animate({ marginTop: `-${ (num - 1) * height }px`}, 300, function() {
+    });
 }
 
 // main change slide
