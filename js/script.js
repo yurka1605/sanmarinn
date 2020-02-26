@@ -14,10 +14,17 @@ $(window).on('scroll', function() {
 
 /** ======================== User actions ========================== **/
 // scrool bunner
-$('.further__arrow, .banner__further span').on('click', _ => {
+$('.header .further__arrow, .header .banner__further span').on('click', _ => {
     $('body, html').animate({ 
-        scrollTop: $('.about-us').offset().top - 75,
-    }, 500, 'swing');
+        scrollTop: $('.main').offset().top - 75,
+    }, 300, 'swing');
+})
+// scrool top
+$('.footer .banner__further span,.footer .further__arrow').on('click', function(e) {
+    e.preventDefault();
+    $('body, html').animate({ 
+        scrollTop: 0,
+    }, 300, 'swing');
 })
 // + - people 
 $('.minus, .plus').on('click', function() {

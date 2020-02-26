@@ -1065,6 +1065,9 @@ label {
 .mobile-preview {
     display: none;
 }
+footer .banner__further {
+    display: none;
+}
 
 /* Media */
 @media (max-width: 1199px) {
@@ -1347,8 +1350,6 @@ label {
         max-width: calc(100% - 30px);
         margin-bottom: 20px;
     }
-    .stocks__slider_item {
-    }
     .numbers__slider_item:nth-child(1), .stocks__slider_item:nth-child(1),
     .numbers__slider_item:nth-child(2), .stocks__slider_item:nth-child(2) {
         display: flex;
@@ -1435,11 +1436,29 @@ label {
     } 
     .footer {
         position: relative;
-        height: 480px;
+        height: 500px;
         background-size: cover;
+        padding-top: 40px;
     }
     .footer__partners {
         display: none;
+    }
+    .footer .banner__further {
+        bottom: 20px;
+    }
+    .footer .banner__further span,
+    .footer .banner__further {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .footer .further__arrow {
+        position: relative;
+        top: 15px;
+        transform: rotate(135deg) scale(1);
+        width: 40px;
+        height: 40px;
+        border-left: 4px solid #ffffff;
+        border-bottom: 4px solid #ffffff;
     }
 }
 @media (max-width: 480px) {
