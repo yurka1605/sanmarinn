@@ -29,12 +29,14 @@ li {
 /* Header */
 .header {
   background-image: url(../assets/banner-slider/banner-bg-1.png);
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   background-position: top left;
   padding-bottom: 30px;
   overflow-x: hidden;
   padding-top: 67px;
   position: relative;
+  min-height: 100vh;
 }
 .header__top {
     color: white;
