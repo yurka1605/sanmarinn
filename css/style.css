@@ -1422,6 +1422,7 @@ label {
         margin-bottom: 60px;
     } 
     .footer {
+        position: relative;
         height: 480px;
         background-size: cover;
     }
