@@ -39,7 +39,7 @@ $('.minus, .plus').on('click', function() {
 });
 // banner-slider click item
 $('.banner__slider .slider__item').on('click', function() {
-    lastSlide($(this).data('num'), this);
+    lastSlide($(this).data('num'), $(this).data('img'), this);
 });
 // banner-slider click control
 $('.controls__item').on('click', function() {
@@ -49,7 +49,8 @@ $('.controls__item').on('click', function() {
     } else if ( num !== 1 && $(this).hasClass('left')) {
         num = num - 1;
     }
-    lastSlide(num, $(`.banner__slider .slider__item:nth-child(${ num })`));
+    const current = $(`.banner__slider .slider__item:nth-child(${ num })`);
+    lastSlide(num, $(current).data('img'), current);
 })
 // open menu
 $('.header__menu_open').on('click', function() {
@@ -117,11 +118,11 @@ function checkScrollHeader() {
 }
 
 // banner change slide
-function lastSlide(num, current) {
+function lastSlide(num, img, current) {
     var currentNum = num - 1;
     var firtsImg = $('.banner__slider .slider__item:first-child');
     var width = firtsImg.width() + 26;
-    var style = `background-image: url(./assets/banner-slider/banner-bg-${ num }.png);`;
+    var style = `background-image: url(${ img });`;
 
     $('.banner__slider .slider__item').each(function() {
         $(this).removeClass('active');
