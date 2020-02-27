@@ -978,8 +978,8 @@ label {
 
 /* FOOTER */
 .footer {
-    height: 769px;
     min-height: calc(100vh - 67px);
+    max-height: calc(100vh - 67px);
     padding-top: 61px;
     background-image: url(../assets/footer/footer-bg.png);
     background-size: 100% 100%;
