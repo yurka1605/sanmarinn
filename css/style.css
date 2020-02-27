@@ -979,6 +979,7 @@ label {
 /* FOOTER */
 .footer {
     height: 769px;
+    min-height: calc(100vh - 67px);
     padding-top: 61px;
     background-image: url(../assets/footer/footer-bg.png);
     background-size: 100% 100%;
@@ -1049,6 +1050,9 @@ label {
     display: none;
     position: absolute;
     top: 50%;
+}
+.stocks__img-min {
+    display: none;
 }
 .banner__further span:first-child {
     display: inline;
@@ -1468,5 +1472,20 @@ footer .banner__further {
     }
     .stocks__slider_info {
         padding: 18px 10px 10px 22px;
+    }
+}
+@media (max-width: 375px) {
+    .stocks__slider_item img {
+        display: none;
+    }
+    .stocks__slider_item .stocks__img-min {
+        display: block;
+        min-width: 50%;
+    }
+    .stocks__slider_info {
+        height: inherit;
+    }
+    .stocks__slider_info a {
+        font-size: 12px;
     }
 }
