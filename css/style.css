@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap&subset=latin-ext');
+@import './bootstrap.min.css';
+@import './jquery-ui.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -233,7 +236,8 @@ li {
 .header__menu .col-lg-3 .menu__list:not(:last-child) {
     margin-bottom: 18px;
 }
-.header__menu .list__title {
+.header__menu .list__title,
+.header__menu .list__title a {
     margin-bottom: 7px;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
@@ -252,8 +256,12 @@ li {
     color: rgba(59, 59, 59, 255);
 }
 .header__menu .list__item:hover a,
-.header__menu .list__title:hover {
+.header__menu .list__title:hover,
+.header__menu .list__title:hover a {
     color: #ee741d;
+}
+.header__menu .list__title:hover a {
+    text-decoration: none;
 }
 .header__menu .list__item a:hover {
     text-decoration: underline;
@@ -883,6 +891,7 @@ label {
 .numbers__slider_info h3 {
     font-size: 15px;
     margin-bottom: 22px;
+    line-height: 1.7;
 }
 .numbers__slider_info a {
     width: 225px;
