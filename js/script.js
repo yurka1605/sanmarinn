@@ -10,6 +10,8 @@ $( document ).ready(function() {
 
 $(window).on('scroll', function() {
     checkScrollHeader();
+    $(window).scrollTop() > $('.main').offset().top ? 
+        $('.fixed-form').addClass('show') : $('.fixed-form').removeClass('show');
 });
 
 /** ======================== User actions ========================== **/

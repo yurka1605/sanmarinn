@@ -1,0 +1,123 @@
+@import './style.css';
+
+.header {
+    background-image: url(../assets/banner-slider/banner-bg-number-1.png);
+}
+.breadcrumbs,
+.breadcrumbs__inner-page:hover,
+.breadcrumbs__inner-page,
+.breadcrumbs__inner-page.active:hover,
+.breadcrumbs__inner-page.active,
+.breadcrumbs__main-page:hover,
+.breadcrumbs__main-page {
+    color: #fff;
+}
+.banner__left p {
+    color: #fff;
+    font-size: 16px;
+}
+.banner__left p:nth-child(2) {
+    margin-top: 30px;
+}
+.banner__left p:nth-child(3) {
+    margin-top: 13px;
+}
+.bunner__icons {
+    display: flex;
+    align-items: center;
+}
+.bunner__icons img {
+    height: 22px;
+    margin-right: 20px;
+}
+.bunner__icons img:last-child {
+    margin-right: 0px;
+}
+.fixed-form {
+    position: fixed;
+    top: 125px;
+    right: 10%;
+    box-shadow: -2px 4px 11px -4px rgba(0,0,0,0.75);
+    z-index: 10;
+    display: none;
+}
+.fixed-form.show {
+    display: flex;
+}
+.number-list__item {
+    position: relative;
+    line-height: 1;
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+.number-list__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    background-image: url(../assets/list-marker.png);
+    background-size: cover;
+    z-index: 0;
+}
+.section {
+    padding-top: 50px;
+}
+.section a {
+    color: #FF7800;
+}
+.sections__title {
+    display: block;
+}
+.sections__title span {
+    display: block;
+    font-size: 18px;
+}
+.feedback-section > a {
+    width: 225px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ee741d;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #ee741d;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+}
+.feedback-section > a:hover {
+    background-color: #ee741d;
+    color: #ffffff;
+    text-decoration: none;
+}
+@media (max-width: 992px) {
+    .fixed-form.show {
+        display: none;
+    }
+    .mobile-form {
+        display: block;
+        width: 100%;
+        padding-bottom: 36px;
+    }
+    .banner__form {
+        width: 100%;
+        max-width: 100%;
+    }
+    .dop-btns {
+        flex-direction: column;
+    }
+    .dop-btns button {
+        margin-bottom: 20px;
+        width: 100%;
+        font-size: 16px;
+    }
+}
+@media (max-width: 375px) {
+
+}

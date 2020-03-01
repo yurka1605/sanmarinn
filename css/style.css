@@ -266,11 +266,29 @@ li {
 .header__menu .list__item a:hover {
     text-decoration: underline;
 }
+.breadcrumbs__inner-page:hover,
+.breadcrumbs__inner-page {
+    color: #7f7f7f;
+}
+.breadcrumbs__inner-page.active:hover,
+.breadcrumbs__inner-page.active {
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(59, 59, 59, 255);
+    text-decoration: none;
+}
+.breadcrumbs__main-page:hover,
+.breadcrumbs__main-page {
+    font-weight: 400;
+    font-size: 14px;
+    color: #7f7f7f;
+}
 /* END:Header */
 
 /* banner */
 .banner {
     padding-top: 50px;
+    /* height: auto; */
 }
 .banner__all {
     position: relative;
@@ -662,7 +680,7 @@ label {
     width: auto;
 }
 .banner__further {
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
