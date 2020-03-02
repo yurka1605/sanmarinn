@@ -41,6 +41,21 @@ li {
   position: relative;
   min-height: 100vh;
 }
+.header .sidebar-list {
+    margin-top: 50px;
+}
+.header .sidebar-list__item {
+    color: #ffffff;
+}
+.sidebar-list__item {
+    font-size: 16px;
+    color: rgba(255, 116, 9, 255);
+    cursor: pointer;
+}
+.sidebar-list__item.active,
+.sidebar-list__item:hover {
+    font-weight: 600;
+}
 .header__top {
     color: white;
     padding-top: 10px;

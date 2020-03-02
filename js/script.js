@@ -46,7 +46,8 @@ $('.banner__slider .slider__item').on('click', function() {
 // banner-slider click control
 $('.controls__item').on('click', function() {
     var num = parseInt($('.controls__info .current').text(), 10);
-    if (num !== 5 && $(this).hasClass('right')) {
+    var max = parseInt($('.controls__info .total').text(), 10);
+    if (num !== max && $(this).hasClass('right')) {
         num = num + 1;
     } else if ( num !== 1 && $(this).hasClass('left')) {
         num = num - 1;
@@ -132,6 +133,12 @@ $('.sidebar-list__item').click(function() {
         } else {
             $(item).removeClass('active');
         }
+    });
+});
+// click feedback 
+$('.claim-btn').click(function() {
+    $('.claim-btn').each(function(_,item) {
+        $(item).toggleClass('active');
     });
 });
 /** ======================== END:User actions ========================== **/
