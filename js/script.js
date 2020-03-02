@@ -101,6 +101,39 @@ $('.stocks__control').on('click', function() {
 $('.numbers__control').on('click', function() {
     mainChangeSlide('numbers', this);
 });
+
+// cards show all
+$('.show-all').on('click', function() {
+    $(this).prev().toggleClass('all');
+    $(this).prev().removeClass('full');
+    $(this).toggleClass('show');
+    $('.card').each(function(_,item) {
+        $(item).removeClass('full');
+        $(item).children('a:last-child').removeClass('more');
+    });
+});
+
+// card show full
+$('.card__info a').on('click', function() {
+    $(this).parent().parent().parent().toggleClass('full');
+    $(this).parent().parent().toggleClass('full');
+    $(this).toggleClass('more');
+});
+
+// left menu click
+$('.sidebar-list__item').click(function() {
+    $('.right-section').each((i, item) => {
+        $(item).removeClass('active');
+    });
+    $('.sidebar-list__item').each((i, item) => {
+        if($(this).data('id') === $(item).data('id')) {
+            $(item).addClass('active');
+            $(`#${ $(this).data('id') }`).addClass('active');
+        } else {
+            $(item).removeClass('active');
+        }
+    });
+});
 /** ======================== END:User actions ========================== **/
 
 
