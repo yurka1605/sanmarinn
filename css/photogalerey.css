@@ -140,12 +140,6 @@
 .card__info.more a span:first-child {
     display: none;
 }
-.right-section {
-    display: none;
-}
-.right-section.active {
-    display: block;
-}
 .list-info {
     width: inherit;
     overflow-x: auto;
@@ -180,11 +174,6 @@
 }
 .all .hidden-block {
     display: block;
-}
-.right-section h6 {
-    font-weight: 400;
-    margin-top: 40px;
-    font-size: 14px;
 }
 .photo {
     margin-bottom: 30px;

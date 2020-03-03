@@ -47,6 +47,23 @@ li {
 .header .sidebar-list__item {
     color: #ffffff;
 }
+.section .sidebar-list {
+    position: sticky;
+    top: 120px;
+    left: 0;
+}
+.right-section {
+    display: block;
+    margin-bottom: 40px;
+}
+.right-section.active {
+    display: block;
+}
+.right-section h6 {
+    font-weight: 400;
+    margin-top: 40px;
+    font-size: 14px;
+}
 .sidebar-list__item {
     font-size: 16px;
     color: rgba(255, 116, 9, 255);

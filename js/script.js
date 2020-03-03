@@ -6,12 +6,14 @@ $( document ).ready(function() {
         $('.about__controls_nav').append(
             `<div class="about__nav-btn ${ i == 0 ? 'active' : '' }" data-num="${ i + 1 }"></div>`);
     });
+    scrollSidebar();
 });
 
 $(window).on('scroll', function() {
     checkScrollHeader();
     $(window).scrollTop() > $('.main').offset().top ? 
         $('.fixed-form').addClass('show') : $('.fixed-form').removeClass('show');
+    scrollSidebar();
 });
 
 /** ======================== User actions ========================== **/
@@ -123,17 +125,8 @@ $('.card__info a').on('click', function() {
 
 // left menu click
 $('.sidebar-list__item').click(function() {
-    $('.right-section').each((i, item) => {
-        $(item).removeClass('active');
-    });
-    $('.sidebar-list__item').each((i, item) => {
-        if($(this).data('id') === $(item).data('id')) {
-            $(item).addClass('active');
-            $(`#${ $(this).data('id') }`).addClass('active');
-        } else {
-            $(item).removeClass('active');
-        }
-    });
+    const top = $(`#${ $(this).data('id') }`).offset().top - 90;
+    $('html, body').animate({ scrollTop: top }, 600);
 });
 // click feedback 
 $('.claim-btn').click(function() {
@@ -216,5 +209,22 @@ function mainChangeSlide(selector, current) {
 
     $(`.${ selector }__slider_item:nth-child(${ num })`).addClass('active');
     $( firtsSlide ).animate({ marginLeft: `${ - left }px`}, 300);
+}
+// get current active block
+function scrollSidebar() {    
+    const scroll = parseInt($(window).scrollTop() + 180, 10);
+    $('.right-section').each((_,el) => {
+        const top = parseInt($(el).offset().top, 10);
+        const height = parseInt(top + $(el).height(), 10);
+        if(top < scroll && scroll < height) {
+            $('.sidebar-list__item').each((i, item) => {
+                if($(el).attr('id') === $(item).data('id')) {
+                    $(item).addClass('active');
+                } else {
+                    $(item).removeClass('active');
+                }
+            });
+        }
+    });
 }
 /** ======================== END:Functions ========================== **/

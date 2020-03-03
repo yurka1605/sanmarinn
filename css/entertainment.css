@@ -138,12 +138,6 @@
 .card__info.more a span:first-child {
     display: none;
 }
-.right-section {
-    display: none;
-}
-.right-section.active {
-    display: block;
-}
 .animation {
     margin-bottom: 50px;
 }
@@ -178,11 +172,6 @@
 .all-info {
     display: none;
 }
-.right-section h6 {
-    font-weight: 400;
-    margin-top: 40px;
-    font-size: 14px;
-} 
 .animation.all .all-info {
     display: block;
     overflow-x: hidden;
